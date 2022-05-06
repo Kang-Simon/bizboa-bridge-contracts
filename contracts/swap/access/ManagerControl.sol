@@ -20,6 +20,14 @@ contract ManagerControl is AccessControl, Ownable {
     }
 
     /**
+     * @dev Throws if called by any account other than the manager.
+     */
+    modifier onlyManager() {
+        require(isManager(_msgSender()), "ManagerControl: caller is not the manager");
+        _;
+    }
+
+    /**
      * @dev Modifier that checks that an account or sender has a specific role.
      * Reverts with a standardized message including the required role.
      *

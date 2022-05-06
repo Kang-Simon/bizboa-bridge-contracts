@@ -14,7 +14,8 @@
     "test:BridgeLiquidity": "NODE_ENV=test node_modules/.bin/hardhat test test/bridge/Liquidty.test.ts",
     "test:GameSwap": "NODE_ENV=test node_modules/.bin/hardhat test test/swap/GameSwap.test.ts",
     "test:GameToken": "NODE_ENV=test node_modules/.bin/hardhat test test/swap/GameToken.test.ts",
-    "test:MetaSwap": "NODE_ENV=test node_modules/.bin/hardhat test test/swap/MetaSwap.test.ts"
+    "test:MetaSwap": "NODE_ENV=test node_modules/.bin/hardhat test test/swap/MetaSwap.test.ts",
+    "test:PointToken": "NODE_ENV=test node_modules/.bin/hardhat test test/swap/PointToken.test.ts"
   },
   "repository": {
     "type": "git",
